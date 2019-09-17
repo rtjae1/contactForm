@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="brand">wryan worldwide</h1>
-      <div class="wrapper">
+      <h1 class="brand"><span> wryan</span> worldwide</h1>
+      <div class="wrapper animated bounceInLeft">
         <div class="companyInfo">
           <h3>wryan worldwide</h3>
           <ul>
-            <li>4010 Kansas Avenue Northwest</li>
-            <li>813.943.8562</li>
-            <li>ryan.t.jae@gmail.com</li>
+            <li><i class="fa fa-road"></i> 4010 Kansas Avenue Northwest</li>
+            <li><i class="fa fa-phone"></i> 813.943.8562</li>
+            <li><i class="fa fa-envelope"></i> ryan.t.jae@gmail.com</li>
           </ul>
         </div>
         <div class="contact">
@@ -38,11 +46,11 @@
               <label>Phone Number</label>
               <input type="text" name="phone" />
             </p>
-            <p>
+            <p class="full">
               <label>Message</label>
               <textarea name="message" rows="5"></textarea>
             </p>
-            <p>
+            <p class="full">
               <button>Submit</button>
             </p>
           </form>
