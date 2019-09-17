@@ -1,3 +1,5 @@
+<!-- html, css, js, firebase -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +20,8 @@
   <body>
     <div class="container">
       <h1 class="brand"><span> wryan</span> worldwide</h1>
-      <div class="wrapper animated bounceInLeft">
+      <!-- EXTRA CLASSES: animated bounceInLeft -->
+      <div class="wrapper">
         <div class="companyInfo">
           <h3>wryan worldwide</h3>
           <ul>
@@ -29,33 +32,44 @@
         </div>
         <div class="contact">
           <h3>Email Us</h3>
-          <form>
+          <div class="alert">Your message has been sent.</div>
+          <!-- VALIDATION -->
+          <form id="contactForm">
             <p>
               <label>Name</label>
-              <input type="text" name="name" />
+              <input type="text" name="name" id="name" required />
             </p>
             <p>
               <label>Company</label>
-              <input type="text" name="company" />
+              <input type="text" name="company" id="company" />
             </p>
             <p>
-              <label>Email</label>
-              <input type="email" name="email" />
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
             </p>
             <p>
               <label>Phone Number</label>
-              <input type="text" name="phone" />
+              <input type="text" name="phone" id="phone" />
             </p>
             <p class="full">
               <label>Message</label>
-              <textarea name="message" rows="5"></textarea>
+              <textarea
+                name="message"
+                rows="5"
+                id="message"
+                required
+              ></textarea>
             </p>
             <p class="full">
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </p>
           </form>
         </div>
       </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
